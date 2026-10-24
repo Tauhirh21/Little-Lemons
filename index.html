@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Lemons | Handcrafted Lemonade</title>
+        <meta name="description" content="Handcrafted lemonade in classic, mint, pink, and passion flavors. Made fresh daily and delivered to your door.">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Little Lemons logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Order</a></li>
+        </ul>
+        <div class="cart" id="cart">🛒 <span id="cart-count">0</span></div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Handcrafted Lemonade, Made Daily</h1>
+        <p>Handcrafted with real lemons. Delivered to your door.</p>
+        <a href="contact.html" class="btn">Order Now</a>
+    </header>
+    <!-- Flavors Preview -->
+    <section class="flavors" id="menu">
+        <h2>Our Flavors</h2>
+        <p class="subtitle">Handcrafted in small batches</p>
+
+        <div class="flavor-grid">
+
+            <div class="card">
+                <img src="images/classic.jpg" alt="Classic lemonade in a glass bottle" loading="lazy">
+                <div class="card-body">
+                    <h3>Classic</h3>
+                    <p>Fresh-squeezed lemons, pure cane sugar, and spring water. The original.</p>
+                    <span class="price">R40</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/mint.jpg" alt="Mint lemonade in a glass bottle" loading="lazy">
+                <div class="card-body">
+                    <h3>Mint</h3>
+                    <p>Cool muddled mint leaves blended with our classic lemonade base.</p>
+                    <span class="price">R40</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pink.jpg" alt="Pink lemonade in a glass bottle" loading="lazy">
+                <div class="card-body">
+                    <h3>Pink</h3>
+                    <p>Ripe strawberries for a sweet, rosy twist.</p>
+                    <span class="price">R40</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/passion.jpg" alt="Passion fruit lemonade in a glass bottle" loading="lazy">
+                <div class="card-body">
+                    <h3>Passion</h3>
+                    <p>Tropical passion fruit with real seeds. Bold and refreshing.</p>
+                    <span class="price">R40</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Little Lemons. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

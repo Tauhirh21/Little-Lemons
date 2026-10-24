@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Little Lemons Handcrafted Lemonade</title>
+    <meta name="description" content="Place your order for handcrafted Little Lemons lemonade. Delivery and pickup available.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Little Lemons logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Order</a></li>
+        </ul>
+        <div class="cart" id="cart">🛒 <span id="cart-count">0</span></div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <h1>Place an Order</h1>
+        <p>Fresh lemonade delivered or ready for pickup.</p>
+    </header>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="contact-section">
+
+        <form class="contact-form" id="order-form">
+            <h2>Order Form</h2>
+
+            <label>
+                Your Name
+                <input type="text" name="name" required placeholder="e.g. Thandi Mokoena">
+            </label>
+
+            <label>
+                Phone Number
+                <input type="tel" name="phone" required placeholder="e.g. 082 123 4567">
+            </label>
+
+            <label>
+                Email (optional)
+                <input type="email" name="email" placeholder="you@example.com">
+            </label>
+
+            <label>
+                Flavor
+                <select name="flavor" required>
+                    <option value="">Choose a flavor…</option>
+                    <option>Classic — R40</option>
+                    <option>Mint — R40</option>
+                    <option>Pink — R40</option>
+                    <option>Passion — R40</option>
+                    <option>Mixed 12-Pack — R420</option>
+                    <option>5L Dispenser — R180</option>
+                </select>
+            </label>
+
+            <label>
+                Quantity
+                <input type="number" name="quantity" min="1" value="1" required>
+            </label>
+
+            <label>
+                Delivery or Pickup?
+                <select name="method" required>
+                    <option>Delivery</option>
+                    <option>Pickup</option>
+                </select>
+            </label>
+
+            <label>
+                Notes (address, date needed, etc.)
+                <textarea name="notes" rows="4" placeholder="Anything we should know?"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send Order</button>
+
+            <p class="form-note">We'll confirm your order by phone within a few hours.</p>
+        </form>
+
+        <aside class="contact-info">
+            <h2>Get in Touch</h2>
+
+            <div class="info-block">
+                <h3>📞 Phone</h3>
+                <p>082 123 4567</p>
+            </div>
+
+            <div class="info-block">
+                <h3>✉️ Email</h3>
+                <p>hello@littlelemons.co.za</p>
+            </div>
+
+            <div class="info-block">
+                <h3>📍 Pickup Location</h3>
+                <p>Saturday Market<br>Main Street Stall #14<br>8am – 1pm</p>
+            </div>
+
+            <div class="info-block">
+                <h3>🚚 Delivery</h3>
+                <p>Free within 5km<br>R25 beyond 5km<br>Same-day if ordered before 10am</p>
+            </div>
+
+            <div class="info-block">
+                <h3>💳 Payment</h3>
+                <p>Cash on delivery<br>EFT before dispatch<br>Card at market</p>
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Little Lemons | Handcrafted with 🍋</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
